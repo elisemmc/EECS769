@@ -52,7 +52,7 @@ Apparently any set $S$ with a given $\alpha$ is as good as any other.
 \begin{split}
  I(X;Q_1,A_1,Q_2,A_2) & = I(X;Q_1) + I(X;A_1|Q_1) + I(X;Q_2|Q_1,A_1) + I(X;A_2|Q_1, A_1, Q_2)\\
  & \overset{(a)}{=} I(X;A_1|Q_1) + I(X;Q_2|Q_1,A_1) + I(X;A_2|Q_1, A_1, Q_2)\\
- & = I(X;A_1|Q_1) + H(Q_2|A_1,Q_1) - H(Q_2|X,A_1,Q_1) + I(X;A_2|Q_1, A_1, Q_2)\\
+ & = I(X;A_1|Q_1) + H(Q_2|Q_1,A_1) - H(Q_2|X,Q_1,A_1) + I(X;A_2|Q_1, A_1, Q_2)\\
  & \overset{(b)}{=} I(X;A_1|Q_1) + H(Q_2) - H(Q_2) + I(X;A_2|Q_1, A_1, Q_2)\\
  & = I(X;A_1|Q_1) + I(X;A_2|Q_1, A_1, Q_2)\\
  & = I(X;A_1|Q_1) + H(A_2|Q_1,A_1,Q_2) - H(A_2|X,Q_1,A_1,Q_2)\\
@@ -244,14 +244,15 @@ Knowing both the run lengths and any $X_i$ in the sequence, we can determine the
 \end{split}
 \end{equation}
 (a) $X_i=1$ with the probability $p$.  Also, we know that $X_1, X_2,...,X_n$ are independent and identically distributed.  Thus, we can conclude that $nH(p) = H(X_1,X_2,...,X_n)$.  In other words, the entropy of a sequence is the product of the entropies of the random variables\\
-(b) We know that $(Z_1,Z_2,...,Z_K) = f(X_1, X_2,...,X_n)$.  Since we know that the entropy of a random variable is always greater than or equal to the entropy of a function of that random variable, we know that: $H(X_1,X_2,...,X_n) \geq H(Z_1,Z_2,...,Z_K)$.  Since K is a function of $Z_1,Z_2,...,Z_K$ we know that $H(K|Z_1,Z_2,...,Z_K) = 0$.  Thus:
+(b) We know that $(Z_1,Z_2,...,Z_K) = f(X_1, X_2,...,X_n)$.  Since we know that the entropy of a random variable is always greater than or equal to the entropy of a function of that random variable, we know that: $H(X_1,X_2,...,X_n) \geq H(Z_1,Z_2,...,Z_K)$.  Since K is a function of $Z_1,Z_2,...,Z_K$ we know that $H(K|Z_1,Z_2,...,Z_K) = 0$.  Thus by chain rule we know that:
 $$H(Z_1,Z_2,...,Z_K,K) = H(Z_1,Z_2,...,Z_K) + H(K|Z_1,Z_2,...,Z_K) = H(Z_1,Z_2,...,Z_K)$$
 (c)Chain rule\\
-(d)Since $Z_1,Z_2,...,Z_K$ are random bits with $H(Z_i)=1bit$.\\
+(d)Since $Z_1,Z_2,...,Z_K$ are random bits with $H(Z_i)=1bit$.
+$$H(Z_1,Z_2,...,Z_K|K) = \sum_{k \in K}p(K=k)H(Z_1,Z_2,...,Z_k|K=k) = \sum_{k \in K}p(k)k = EK$$
 (e)Entropy is non-negative\\
 Thus no more than $nH(p)$ fair coin tosses can be derived from $(X_1,...,X_n)$, on the average.
 \subsection{Exhibit a good map f on sequences of length 4}
-Since it is an unfair coin and we don't know $p$ there are not very many ways to simulate a sequence of fair coin-flips.  However, even without knowing $p$ we know that the flips are i.i.d. so we know that a series of 4 flips having a given number of heads occurring is equally likely.
+Since it is an unfair coin and we don't know $p$ there are not very many ways to simulate a sequence of fair coin-flips.  However, even without knowing $p$ we know that the flips are i.i.d. so we know that a series of 4 flips having a given number of heads occurring is equally likely.  Though, this does mean that the sequence 0000 and 1111 are not useful to us because of our lack of knowledge of $p$.
 \begin{center}
 \begin{tabular}{ c | c | c | c | c | c |}
 0000 $\rightarrow$ NULL & & & & & \\
