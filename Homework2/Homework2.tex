@@ -56,8 +56,8 @@ Apparently any set $S$ with a given $\alpha$ is as good as any other.
  & \overset{(b)}{=} I(X;A_1|Q_1) + H(Q_2) - H(Q_2) + I(X;A_2|Q_1, A_1, Q_2)\\
  & = I(X;A_1|Q_1) + I(X;A_2|Q_1, A_1, Q_2)\\
  & = I(X;A_1|Q_1) + H(A_2|Q_1,A_1,Q_2) - H(A_2|X,Q_1,A_1,Q_2)\\
- & \overset{(c)}{=} (X;A_1|Q_1) + H(A_2|Q_1,A_1,Q_2)\\
- & \overset{(d)}{\leq} (X;A_1|Q_1) + H(A_2|Q_2)\\
+ & \overset{(c)}{=} I(X;A_1|Q_1) + H(A_2|Q_1,A_1,Q_2)\\
+ & \overset{(d)}{\leq} I(X;A_1|Q_1) + H(A_2|Q_2)\\
  & \overset{(e)}{=} I(X;A_1|Q_1)+I(X;A_2|Q_2)\\
  & = 2I(X;A_1|Q_1)
 \end{split}
@@ -65,7 +65,7 @@ Apparently any set $S$ with a given $\alpha$ is as good as any other.
 (a) $X$ and $Q_1$ are independent thus $I(X;Q_1)=0$\\
 (b) $Q_2$ is independent of $Q_1$, $A_1$, and $X$\\
 (c) Given $X$ and $Q_2$ we can completely determine $A_2$ so $H(A_2|X,Q_1,A_1,Q_2) = 0$\\
-(d) Entropy never increases with conditioning
+(d) Entropy never increases with conditioning\\
 (e) Proven in 0.2.1
 
 \section{Entropy of a disjoint mixture}
@@ -111,7 +111,7 @@ H(X) & = H(\alpha) + \alpha H(X_1) + (1-\alpha)H(X_2)\\
 \end{split}
 \end{equation}
 $$2^{H(X)} \leq 2^{H(X_1)} + 2^{H(X_2)}$$
-\textbf{Interpretation:} The effective alphabet size of X, a combination of $X_1$ and $X_2$, is less than or equal to their effective alphabet sizes
+\textbf{Interpretation:} The effective alphabet size of X, a combination of $X_1$ and $X_2$, is less than or equal to the sum of their effective alphabet sizes
 \subsection{Let $X_1$ and $X_2$ be uniformly distributed over their alphabets.  What is the maximizing $\alpha$ and the associated $H(X)$}
 The maximizing $\alpha$ is worked out above.
 $$H(X) = log(2^{H(X_1)} + 2^{H(X_2)})$$
@@ -175,7 +175,7 @@ $$I(X;Y|Z)=H(X|Z)-H(X|Y,Z) = H(X|Z) = 1/2$$
 \subsection{Prove that $H(X_0|X_n)$ is non-decreasing with $n$ for any Markov chain}
 The data processing inequality states that for any Markov chain, $I(X;Y) \geq I(X;Z)$
 $$I(X_0;X_{n-1}) \geq I(X_0;X_n)$$
-$$H(X_0)-H(X_0|X_{n-1} \geq H(X_0)-H(X_0|X_n)$$
+$$H(X_0)-H(X_0|X_{n-1}) \geq H(X_0)-H(X_0|X_n)$$
 Thus, $H(X_0|X_n)$ is non-decreasing as $n$ increases for any Markov chain
 
 \section{A metric}
