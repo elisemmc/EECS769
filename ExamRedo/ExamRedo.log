@@ -1,0 +1,470 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  1 DEC 2016 12:43
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**ExamRedo.tex
+(./ExamRedo.tex
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/bk11.clo
+File: bk11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 96.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count91
+))
+\Gin@req@height=\dimen111
+\Gin@req@width=\dimen112
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks16
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/03/10 v2.15b AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen113
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen114
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count92
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count93
+\leftroot@=\count94
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count95
+\DOTSCASE@=\count96
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen115
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
+\macc@depth=\count97
+\c@MaxMatrixCols=\count98
+\dotsspace@=\muskip10
+\c@parentequation=\count99
+\dspbrk@lvl=\count100
+\tag@help=\toks18
+\row@=\count101
+\column@=\count102
+\maxfields@=\count103
+\andhelp@=\toks19
+\eqnshift@=\dimen116
+\alignsep@=\dimen117
+\tagshift@=\dimen118
+\tagwidth@=\dimen119
+\totwidth@=\dimen120
+\lineht@=\dimen121
+\@envbody=\toks20
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/qtree/qtree.sty
+Package: 2008/12/12 v.3.1bQtree: tree-drawing for linguistics
+Package: qtree 2008/12/12 v.3.1bQtree: tree-drawing for linguistics
+(/usr/local/texlive/2016/texmf-dist/tex/latex/pict2e/pict2e.sty
+Package: pict2e 2016/02/05 v0.3b Improved picture commands (HjG,RN,JT)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/pict2e/pict2e.cfg
+File: pict2e.cfg 2016/02/05 v0.1u pict2e configuration for teTeX/TeXLive
+)
+Package pict2e Info: Driver file: pdftex.def on input line 119.
+Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 121.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/pict2e/p2e-pdftex.def
+File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
+)
+\pIIe@GRAPH=\toks22
+\@arclen=\dimen122
+\@arcrad=\dimen123
+\@tempdimd=\dimen124
+)
+\c@treecount=\count104
+\c@branchcount=\count105
+\parentbox=\box28
+\treebox=\box29
+\treeboxone=\box30
+\treeboxtwo=\box31
+\treeboxthree=\box32
+\treeboxfour=\box33
+\treeboxfive=\box34
+\treeboxsix=\box35
+\treeboxseven=\box36
+\treeboxeight=\box37
+\treeboxnine=\box38
+\treeboxten=\box39
+\treeboxeleven=\box40
+\treeboxtwelve=\box41
+\treeboxthirteen=\box42
+\treeboxfourteen=\box43
+\treeboxfifteen=\box44
+\treeboxsixteen=\box45
+\treeboxseventeen=\box46
+\treeboxeighteen=\box47
+\treeboxnineteen=\box48
+\treeboxtwenty=\box49
+\treeoffsetone=\skip46
+\treeoffsettwo=\skip47
+\treeoffsetthree=\skip48
+\treeoffsetfour=\skip49
+\treeoffsetfive=\skip50
+\treeoffsetsix=\skip51
+\treeoffsetseven=\skip52
+\treeoffseteight=\skip53
+\treeoffsetnine=\skip54
+\treeoffsetten=\skip55
+\treeoffseteleven=\skip56
+\treeoffsettwelve=\skip57
+\treeoffsetthirteen=\skip58
+\treeoffsetfourteen=\skip59
+\treeoffsetfifteen=\skip60
+\treeoffsetsixteen=\skip61
+\treeoffsetseventeen=\skip62
+\treeoffseteighteen=\skip63
+\treeoffsetnineteen=\skip64
+\treeoffsettwenty=\skip65
+\treeshiftone=\skip66
+\treeshifttwo=\skip67
+\treeshiftthree=\skip68
+\treeshiftfour=\skip69
+\treeshiftfive=\skip70
+\treeshiftsix=\skip71
+\treeshiftseven=\skip72
+\treeshifteight=\skip73
+\treeshiftnine=\skip74
+\treeshiftten=\skip75
+\treeshifteleven=\skip76
+\treeshifttwelve=\skip77
+\treeshiftthirteen=\skip78
+\treeshiftfourteen=\skip79
+\treeshiftfifteen=\skip80
+\treeshiftsixteen=\skip81
+\treeshiftseventeen=\skip82
+\treeshifteighteen=\skip83
+\treeshiftnineteen=\skip84
+\treeshifttwenty=\skip85
+\treewidthone=\skip86
+\treewidthtwo=\skip87
+\treewidththree=\skip88
+\treewidthfour=\skip89
+\treewidthfive=\skip90
+\treewidthsix=\skip91
+\treewidthseven=\skip92
+\treewidtheight=\skip93
+\treewidthnine=\skip94
+\treewidthten=\skip95
+\treewidtheleven=\skip96
+\treewidthtwelve=\skip97
+\treewidththirteen=\skip98
+\treewidthfourteen=\skip99
+\treewidthfifteen=\skip100
+\treewidthsixteen=\skip101
+\treewidthseventeen=\skip102
+\treewidtheighteen=\skip103
+\treewidthnineteen=\skip104
+\treewidthtwenty=\skip105
+\daughteroffsetone=\skip106
+\daughteroffsettwo=\skip107
+\daughteroffsetthree=\skip108
+\daughteroffsetfour=\skip109
+\branchwidthone=\skip110
+\branchwidthtwo=\skip111
+\branchwidththree=\skip112
+\branchwidthfour=\skip113
+\parentoffset=\skip114
+\treeoffset=\skip115
+\daughteroffset=\skip116
+\branchwidth=\skip117
+\parentwidth=\skip118
+\treewidth=\skip119
+\qta=\toks23
+\qtb=\toks24
+\nbranches=\count106
+\qroofx=\count107
+\qroofy=\count108
+\@qrscratchbox=\box50
+)
+(./ExamRedo.aux)
+\openout1 = `ExamRedo.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-31.8738pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=11.0pt
+* \footskip=27.46295pt
+* \marginparwidth=62.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count109
+\scratchdimen=\dimen125
+\scratchbox=\box51
+\nofMPsegments=\count110
+\nofMParguments=\count111
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count112
+\MPscratchDim=\dimen126
+\MPnumerator=\count113
+\makeMPintoPDFobject=\count114
+\everyMPtoPDFconversion=\toks26
+) (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Try loading font information for U+msa on input line 21.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 21.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+
+ []
+
+
+Overfull \hbox (6.3768pt too wide) in paragraph at lines 44--44
+[]\OT1/cmr/bx/n/10.95 (c) Let $\OML/cmm/m/it/10.95 p[] \OT1/cmr/m/n/10.95 = \OM
+L/cmm/m/it/10.95 Pr\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 K \OT1/cmr/m/n/10.95
+ = \OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 )$\OT1/cmr/bx/n/10.95 . Show that $\
+OML/cmm/m/it/10.95 H\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 K\OT1/cmr/m/n/10.95
+ ) + \OML/cmm/m/it/10.95 E\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 C[]\OT1/cmr/m
+/n/10.95 ]$ \OT1/cmr/bx/n/10.95 is max-i-mized if $\OML/cmm/m/it/10.95 p[] \OT1
+/cmr/m/n/10.95 = [](\OML/cmm/m/it/10.95 C[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10
+.95 = [][] []\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 C[]\OT1/cmr/m/n/10.95 )$\O
+T1/cmr/bx/n/10.95 . 
+ []
+
+[1]
+Underfull \hbox (badness 10000) in paragraph at lines 75--75
+
+ []
+
+[2] [3] [4] [5] [6] [7] [8] (./ExamRedo.aux) ) 
+Here is how much of TeX's memory you used:
+ 3693 strings out of 493014
+ 48678 string characters out of 6133351
+ 141297 words of memory out of 5000000
+ 7177 multiletter control sequences out of 15000+600000
+ 12696 words of font info for 48 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 38i,17n,35p,1399b,282s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2016/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2016/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2016/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2016/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/
+amsfonts/symbols/msam10.pfb>
+Output written on ExamRedo.pdf (9 pages, 194576 bytes).
+PDF statistics:
+ 94 PDF objects out of 1000 (max. 8388607)
+ 67 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

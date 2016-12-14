@@ -1,0 +1,233 @@
+\documentclass[11pt, oneside]{book}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage[margin=1in]{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+\graphicspath{ {images/} }							% TeX will automatically convert eps --> pdf in pdflatex
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{color}
+\usepackage{qtree}
+
+\setlength{\parindent}{0em}
+
+\title{EECS 769 Homework 5}
+\author{Elise McEllhiney}
+\date{\today}							% Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+
+\section{Uniformly distributed noise}
+\subsection*{Let the input random variable $X$ to a channel be uniformly distributed over the interval $-1/2 \leq x \leq +1/2$.  Let the output of the channel be $Y = X + Z$, where the noise random variable is uniformly distributed over the interval $-a/2 \leq z \leq +a/2$.}
+The density of Y is as follows:\\
+For $a < 1$:
+\[ p_Y(y) =
+  \begin{cases} 
+      (\frac{1}{2a})(y+\frac{1+a}{2}) & -\frac{1+a}{2} \leq y \leq -\frac{1-a}{2} \\
+      1 & -\frac{1-a}{2} \leq y \leq +\frac{1-a}{2} \\
+      (\frac{1}{2a})(-y-\frac{1+a}{2}) & +\frac{1-a}{2} \leq y \leq +\frac{1+a}{2} \\
+   \end{cases}
+\]
+For $a = 1$: Y is triangular over [-1, +1]\\
+For $a>1$:
+\[ p_Y(y) =
+  \begin{cases} 
+      y+\frac{1+a}{2} & -\frac{1+a}{2} \leq y \leq -\frac{1-a}{2} \\
+      \frac{1}{a} & -\frac{1-a}{2} \leq y \leq +\frac{1-a}{2} \\
+      -y-\frac{1+a}{2} & +\frac{1-a}{2} \leq y \leq +\frac{1+a}{2} \\
+   \end{cases}
+\]
+
+\subsubsection{(a) Find $I(X;Y)$ as a function of $a$.}
+If $a<1$ the output Y will be conditionally uniformly distributed with probability $1-a$ over the interval $[-\frac{1-a}{2}, +\frac{1-a}{2}]$.  Y will have a triangular density with the base of the triangle having width a with probability a.
+$$h(Y) = H(a) + (1-a)\ln(1-a)+a(\frac{1}{2}+\ln{a})$$
+$$h(Y) = -a\ln{a} - (1-a)\ln{(1-a)} + (1-a)\ln{(1-a)} + \frac{a}{2} + a\ln{a}$$
+$$h(Y) = \frac{a}{2}nats$$
+If $a>1$ Y's trapezoidal density be scaled by a factor a:
+$$h(Y)=\ln{a}+\frac{1}{2a}$$
+Therefore:
+\[ I(X;Y) =
+  \begin{cases} 
+	\frac{a}{2} - \ln{a} & a \leq 1 \\
+	\frac{1}{2a} & a \geq 0 \\
+   \end{cases}
+\]
+
+\subsubsection{(b) For $a=1$ find the capacity of the channel when the input $X$ is peak-limited; that is, the range of $X$ is limited to $-1/2 \leq x \leq +1/2$.  What probability distribution on $X$ maximizes the mutual information $I(X;Y)$?}
+
+$$I(X;Y) = h(Y) - h(Y|X) = h(Y) - h(Z)$$
+Both X and Y are restricted to the interval $[-\frac{1}{2}, +\frac{1}{2}]$.  This means that since $Y = X + Z$, it is limited to the interval $[-1, +1]$.  The differential entropy of Y is $\leq$ the entropy of a uniformly distributed random variable on the interval $[-1, +1]$.  This means, $h(Y) \leq 1$.  This equation for maximum entropy achieves equality iff $x = \pm 1$ with probabilities of $\frac{1}{2}$ each.
+$$I(X;Y) = h(Y) - h(Z) = 1 - 0 = 1$$
+\[ \hat{X} =
+  \begin{cases} 
+	-\frac{1}{2} & y < 0 \\
+	+\frac{1}{2} & y \geq 0 \\
+   \end{cases}
+\]
+
+\subsubsection{(c) (Optional) Find the capacity of the channel for all values of $a$, again assuming that the range of $X$ is limited to $-\frac{1}{2} \leq x \leq \frac{1}{2} $}
+
+\section{Channel with uniformly distributed noise:}
+\subsection*{Consider a additive channel whose input alphabet $\mathcal{X}=\{0, \pm1, \pm2\}$, and whose output $Y=X+Z$, where $Z$ is uniformly distributed over the interval $[-1,1]$.  Thus the input of the channel is a discrete random variable, while the output is continuous.  Calculate the capacity $C=\max_{p(x)}I(X;Y)$ of this channel}
+$$I(X;Y)=h(Y)-h(Y|X)=h(Y)-h(Z)$$
+$$h(Z)=\log{2} \qquad \text{because Z is uniform over the interval [-1,1]}$$
+If the probabilities of $X$ are $p_{-2},p_{-1},...,p_2$, then Y has a uniform output distribution with weight $\frac{p_{-2}}{2}$ for $-3 \leq Y \leq -2$, weight $\frac{(p_{-2}-p_{-1})}{2}$ for $-2 \leq Y \leq -1$,...  Since $Y$ is within the range of $[-3,3]$, the maximum entropy possible occurs for a uniform distribution over the range.  This is achieved if $X$ has the distribution $(\frac{1}{3}, 0, \frac{1}{3}, 0, \frac{1}{3})$.  This means $h(Y)=\log{6}$ and the capacity is: $C=\log{6}-\log{2}=\log{3}$
+
+\section{The two-look Gaussian channel.}
+\subsection*{Consider the ordinary Gaussian channel with two correlated looks at $X$, i.e., $Y=(Y_1,Y_2)$, where
+$$Y_1=X+Z_1$$
+$$Y_2=X+Z_2$$
+with a power constraint $P$ on $X$, and $(Z_1, Z_2)~\mathcal{N}_2(0,K)$, where
+}
+\[
+K=
+	\begin{bmatrix}
+		N & N_{\rho} \\
+		N_{\rho} & N \\
+	\end{bmatrix}
+\]
+
+\begin{equation}
+\begin{split}
+	C_2 & = \max{I(X;Y_1,Y_2)}\\
+	& = h(Y_1,Y_2) - h(Y_1,Y_2|X)\\
+	& = h(Y_1,Y_2) - h(Z_1,Z_2|X)\\
+	& = h(Y_1,Y_2) - h(Z_1,Z_2)\\
+\end{split}
+\end{equation}
+\[
+(Z_1,Z_2) \sim \mathcal{N}( 0,
+\begin{bmatrix}
+	N & N_{\rho}\\
+	N_{\rho} & N\\
+\end{bmatrix}
+)
+\]
+$$h(Z_1,Z_2) = \frac{1}{2}\log{(2 \pi e)^2}|K_Z| = \frac{1}{2}\log{(2 \pi e)^2}N^2(1-\rho^2)$$
+Because,
+$$Y_1=X+Z_1$$
+$$Y_2=X+Z_2$$
+We know
+\[
+(Y_1,Y_2) \sim \mathcal{N} (0,
+\begin{bmatrix}
+	P+N & P+\rho N \\
+	P+\rho N & P+N \\
+\end{bmatrix}
+)
+\]
+$$h(Y_1,Y_2)=\frac{1}{2}\log{(2\pi e)^2(N^2(1-\rho^2)+2PN(1-\rho))}$$
+\begin{equation}
+\begin{split}
+C_2 & = h(Y_1,Y_2)-h(Z_1,Z_2)\\
+& = \frac{1}{2}\log{(1+\frac{2P}{N(1+\rho})}
+\end{split}
+\end{equation}
+
+\subsection*{Find the capacity for:}
+\subsubsection{(a) $\rho = 1$}
+$$C=\frac{1}{2}\log{(1+\frac{P}{N})}$$
+This is the same as the capacity of a single look channel
+\subsubsection{(b) $\rho = 0$}
+$$C=\frac{1}{2}\log{(1+\frac{2P}{N})}$$
+\subsubsection{(c) $\rho = -1$}
+$$C=\infty$$
+If we add $Y_1$ and $Y_2$ we can recover $X$
+
+\section{Fading Channel}
+\subsubsection{Consider and additive noise fading channel where $Z$ is additive noise, $V$ is a random variable representing fading, and $Z$ and $V$ are independent of each other and of $X$.  Argue that the knowledge of the fading factor $V$ improves capacity by showing $$I(X;Y|V) \geq I(X;Y)$$}
+
+\begin{equation}
+\begin{split}
+	I(X;Y,V) & = I(X;V) + I(X;Y|V)\\
+	& = I(X;Y) + I(X;V|Y)\\
+\end{split}
+\end{equation}
+$$I(X;V)+I(X;Y|V) = I(X;Y) + I(X;V|Y)$$
+$$I(X;Y|V) = I(X;Y) + I(X;V|Y) \qquad \text{Since X and V are independent} $$
+$$I(X;Y|V) \geq I(X;Y) \qquad \text{Since} I(X;V|Y) \geq 0$$
+
+\section{Multipath Gaussian Channel}
+\subsection*{Consider a Gaussian noise channel of power constraint $P$, where the signal takes two different paths and the received noisy signals are added together at the antenna.}
+The channel simplifies to an additive noise channel with $2X$ as input, $Z_1+Z_2$ as additive noise, and Y as output.  The power constraint on 2X is 4P.  $Z_1$ and $Z_2$ are zero mean.  This means that $Z_1+Z_2$ is also zero mean.
+\begin{equation}
+\begin{split}
+Var(Z_1+Z_2) & = E[(Z_1+Z_2)^2]\\
+& = E[Z_1^2 + Z_2^2 + 2Z_1Z_2]\\
+& = 2\sigma^2+2\rho\sigma^2\\
+\end{split}
+\end{equation} 
+\subsubsection{(a) Find the capacity of this channel if $Z_1$ and $Z_2$ are jointly normal with covariance matrix:}
+\[
+K=
+	\begin{bmatrix}
+		\sigma^2 & \rho\sigma^2 \\
+		\rho\sigma^2 & \sigma^2 \\
+	\end{bmatrix}
+\]
+$$C = \frac{1}{2}\log{(1+\frac{P}{N})}$$
+\begin{equation}
+\begin{split}
+C & = \frac{1}{2}\log(1+\frac{4P}{2\sigma^2(1+\rho)})\\
+& = \frac{1}{2}\log(1+\frac{2P}{\sigma^2(1+\rho)})\\
+\end{split}
+\end{equation}
+
+\subsubsection{(b) What is the capacity for $\rho=0$, $\rho=1$, $\rho=-1$?}
+For $\rho = 0$
+$$C = \frac{1}{2}\log(1+\frac{2P}{\sigma^2})$$
+For $\rho = 1$
+$$C = \frac{1}{2}\log{(1+\frac{P}{\sigma^2})}$$
+For $\rho = -1$
+$$C = \infty$$
+
+\section{Time varying channel}
+\subsection*{A train pulls out of the station at constant velocity.  The received signal energy thus falls of with time as $\frac{1}{i^2}$.  The total received signal at time $i$. is: $$Y_i=(\frac{1}{i})X_i+Z_i$$ where $Z_1, Z_2,...$ are i.i.d. $~ N(0,N)$.  The transmitter constraint for block length $n$ is $$\frac{1}{n}\sum_{i=1}^{n} x_i^2 (w) \leq P, \quad w \in {1,2,...,2^{nR}}$$ Using Fano's inequality, show that the capacity $C$ is equal to zero for this channel.}
+\begin{equation}
+\begin{split}
+	nR & = H(W)\\
+	& = I(W;\hat{W}) + H(W|\hat{W})\\
+	& \leq I(W:\hat{W}) + n\epsilon_n\\
+	& \leq I(X^n;Y^n) + n\epsilon_n\\
+	& = h(Y^n) - h(Y^n|X^n) + n\epsilon_n\\
+	& = h(Y^n) - h(Z^n) + n\epsilon_n\\
+	& \leq \sum_{i=1}^n h(Y_i) - \sum_{i=1}^n h(Z_i) + n\epsilon_n\\
+	& = \sum_{i=1}^n I(X_i;Y_i) + n\epsilon_n
+\end{split}
+\end{equation}
+Let $P_i$ be the average power of the $i$th column of the codebook
+$$P_i = \frac{1}{2^{nR}} \sum_w x_i^2(w)$$
+Because:
+$$Y_i=\frac{1}{i}X_i+Z_i$$
+And $X_i$ and $Z_i$ are independent,\\
+The average power of $Y_i$ is $\frac{1}{i^2}P_i + N$\\
+And since entropy is maximized by the normal distribution, we have:
+$$h(Y_i) \leq \frac{1}{2}\log{2\pi e}(\frac{1}{i^2}P_i + N)$$
+Conversely,
+\begin{equation}
+\begin{split}
+	nR & \leq \sum(h(Y_i) - h(Z_i) ) + n\epsilon_n\\
+	& \leq \sum(\frac{1}{2}\log{(2 \pi e(\frac{1}{i^2}P_i + N)) - \frac{1}{2}\log{2 \pi e N}}) + n\epsilon_n\\
+	& = \sum( \frac{1}{2}\log{(1 + \frac{P_i}{i^2N})}) + n\epsilon_n
+\end{split}
+\end{equation}
+The average satisfies the power constraint since each of the codewords satisfies the power constraint
+$$\frac{1}{n}\sum_i P_i \leq P$$
+If we use water-filling, the optimal solution is to use our limited power on the channels with the least noise first.  The noise in each channel $i$ is: 
+$$N_i = i^2 N$$
+Thus we put power only into channels where:
+$$P_i + N_i \leq \lambda$$
+The height of the water $\leq N + nP$\\
+For all the channels where we put power:
+$$i^2N < nP + N$$
+The average rate is $< \frac{1}{n} \sqrt{n}\frac{1}{2}\log(1+\frac{nP}{N})$\\
+The capacity per transmission goes to 0.
+Therefore, the channel capacity goes to 0.
+
+
+
+
+\end{document}  
